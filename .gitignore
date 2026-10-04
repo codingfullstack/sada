@@ -1,0 +1,17 @@
+# Local environment files
+app/.envrc
+app/public/wp-config.php
+app/sql/*.sql
+
+# Logs and runtime output
+logs/
+*.log
+
+# WordPress temporary update folders
+app/public/wp-content/upgrade/
+app/public/wp-content/upgrade-temp-backup/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini

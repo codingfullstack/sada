@@ -1,0 +1,67 @@
+.portfolio-admin-fields,
+.portfolio-admin-media {
+	display: grid;
+	gap: 18px;
+}
+
+.portfolio-admin-field {
+	display: grid;
+	gap: 6px;
+	margin: 0;
+}
+
+.portfolio-admin-field label {
+	font-weight: 600;
+}
+
+.portfolio-admin-field input,
+.portfolio-admin-field textarea,
+.portfolio-admin-related {
+	width: 100%;
+	max-width: 760px;
+}
+
+.portfolio-admin-media__section {
+	display: grid;
+	gap: 12px;
+	padding-bottom: 18px;
+	border-bottom: 1px solid #dcdcde;
+}
+
+.portfolio-admin-hero-preview img {
+	width: 220px;
+	height: auto;
+}
+
+.portfolio-admin-gallery,
+.portfolio-admin-featured {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+	gap: 12px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.portfolio-admin-gallery li,
+.portfolio-admin-featured li {
+	display: grid;
+	gap: 8px;
+	padding: 8px;
+	border: 1px solid #dcdcde;
+	background: #fff;
+	cursor: grab;
+}
+
+.portfolio-admin-gallery-placeholder {
+	min-height: 156px;
+	border: 1px dashed #b32d2e;
+	background: #fff7f7;
+}
+
+.portfolio-admin-gallery img,
+.portfolio-admin-featured img {
+	width: 100%;
+	aspect-ratio: 1;
+	object-fit: cover;
+}

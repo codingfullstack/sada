@@ -1,0 +1,130 @@
+/* Variables */
+:root {
+	--color-background: #000000;
+	--color-surface: #000000;
+	--color-text: #F2EBDD;
+	--color-text-muted: rgba(242, 235, 221, 0.68);
+	--color-accent: #FF2A1A;
+	--color-border: rgba(242, 235, 221, 0.18);
+
+	--font-display: "Anton", sans-serif;
+	--font-hand: "Anton", sans-serif;
+	--font-body: system-ui, Arial, sans-serif;
+
+	--site-gutter: clamp(14px, 3.5vw, 64px);
+	--site-content-width: 1920px;
+	--container-width: var(--site-content-width);
+	--content-width: 760px;
+	--page-padding: var(--site-gutter);
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Base */
+.editor-styles-wrapper {
+	background: var(--color-background);
+	color: var(--color-text);
+	font-family: var(--font-body);
+	font-size: clamp(1rem, 0.95rem + 0.22vw, 1.125rem);
+	line-height: 1.7;
+}
+
+/* Typography */
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3,
+.editor-styles-wrapper h4 {
+	color: var(--color-text);
+	font-family: var(--font-display);
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+}
+
+.editor-styles-wrapper p {
+	max-width: var(--content-width);
+	color: var(--color-text-muted);
+	text-align: left;
+	hyphens: manual;
+	word-spacing: normal;
+}
+
+.editor-styles-wrapper a {
+	color: var(--color-text);
+	text-decoration-color: var(--color-border);
+	text-underline-offset: 0.24em;
+}
+
+.editor-styles-wrapper a:hover,
+.editor-styles-wrapper a:focus-visible {
+	color: var(--color-accent);
+	text-decoration-color: var(--color-accent);
+}
+
+/* Layout */
+.editor-styles-wrapper .wp-block {
+	max-width: var(--content-width);
+}
+
+.editor-styles-wrapper .wp-block[data-align="wide"] {
+	max-width: var(--container-width);
+}
+
+.editor-styles-wrapper .wp-block[data-align="full"] {
+	max-width: none;
+}
+
+/* Header */
+
+/* Navigation */
+
+/* Main */
+.editor-styles-wrapper blockquote {
+	border-left: 1px solid var(--color-accent);
+	padding-left: clamp(16px, 3vw, 32px);
+	color: var(--color-text);
+}
+
+/* Footer */
+
+/* WordPress Core */
+.editor-styles-wrapper img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Gutenberg */
+.editor-styles-wrapper .wp-block-button__link {
+	border: 1px solid var(--color-accent);
+	border-radius: 0;
+	background: var(--color-accent);
+	color: var(--color-background);
+	font-weight: 700;
+}
+
+/* Utilities */
+
+/* Responsive */
+@media (max-width: 700px) {
+	.editor-styles-wrapper {
+		font-size: 1rem;
+	}
+
+	.editor-styles-wrapper p {
+		word-spacing: normal;
+	}
+}
+
+@media (max-width: 420px) {
+	.editor-styles-wrapper p {
+		text-align: left;
+		word-spacing: normal;
+	}
+}
